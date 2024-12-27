@@ -1,0 +1,43 @@
+GitHub is a developer platform that allows developers to create, store, manage, and share their code. It uses Git software, which provides distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.
+It is commonly used to host open source software development projects
+
+GIT BASH
+Git bash is a command-line tool that is used as Git CLI emulation for Microsoft Windows. It provides a terminal-like interface and enables users to run Git commands and interact with a repository, as well as offering Unix command line features. Essentially, Git Bash brings the powerful functionalities of Unix-based systems to Windows, making it easier for developers to manage and control their projects.
+
+Git Bash is a command-line interface that is used to communicate with Git, the version control system. Clone the repositories, commit changes, push and pull changes, and more are all possible using Git Bash. Git Bash can automate manual tasks with the scripts written by you. Git Bash helps you in a greater way to learn about Git and version control. It is a CLI for microsoft windows.
+
+Why Use Git Bash?
+Compatibility: Git Bash is designed to be fully compatible with Git, making it a crucial tool for developers who use Git for version control.
+Powerful Command Line Tools: It provides a range of Unix command line tools, which are often preferred by developers for their flexibility and power.
+Ease of Use: With Git Bash, you get a familiar Bash experience on Windows, which is particularly useful for those who are accustomed to Unix/Linux environments.
+
+
+
+
+
+
+Basic Git Bash Commands
+Here are some fundamental Git Bash commands to get you started:
+
+Navigating Directories:
+ls: Lists files and directories in the current directory.
+cd <directory>: Changes the current directory to the specified directory.
+pwd: Prints the current working directory.
+Managing Files and Directories:
+touch <file>: Creates a new file.
+mkdir <directory>: Creates a new directory.
+rm <file>: Removes a file.
+rmdir <directory>: Removes an empty directory.
+Using Git Commands:
+git init: Initializes a new Git repository.
+git clone <repository>: Clones an existing repository.
+git status: Displays the status of your working directory and staging area.
+git add <file>: Adds a file to the staging area.
+git commit -m "message": Commits the changes in the staging area with a message.
+git push: Pushes changes to a remote repository.
+git pull: Pulls changes from a remote repository.
+git log: “git log” command will help you to see the logs of all the commits made. 
+git branch: Creates a new branch. 
+git merge: For merging the changes from one branch to another branch. 
+git config: “git config” will help you to configure the username and email id.
+git tag: It will display the all tags.
