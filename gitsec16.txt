@@ -1,0 +1,99 @@
+$ ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/arjun/.ssh/id_ed25519):
+/c/Users/arjun/.ssh/id_ed25519 already exists.
+Overwrite (y/n)?
+
+arjun@sai MINGW64 ~ (master)
+$
+
+arjun@sai MINGW64 ~ (master)
+$ cd  .ssh
+
+arjun@sai MINGW64 ~/.ssh (master)
+$ ls
+file1/          id_rsa       known_hosts.old
+id_ed25519      id_rsa.pub   ntr/
+id_ed25519.pub  known_hosts
+
+arjun@sai MINGW64 ~/.ssh (master)
+$ cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDVRpj2MpO6xFkAOQN24/lmFQsQdOzUuvXV8DCgTm+Sg arjun@sai
+
+arjun@sai MINGW64 ~/.ssh (master)
+$ ^C
+
+arjun@sai MINGW64 ~/.ssh (master)
+$ mkdir file1
+mkdir: cannot create directory ‘file1’: File exists
+
+arjun@sai MINGW64 ~/.ssh (master)
+$ mkdir file11
+
+arjun@sai MINGW64 ~/.ssh (master)
+$ cd file11
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ ls
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ ls -a
+./  ../
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ git init
+Initialized empty Git repository in C:/Users/arjun/.ssh/file11/.git/
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ ls
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ ls -a
+./  ../  .git/
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ touch file10.txt
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file10.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ git add file10.txt
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ ls -a
+./  ../  .git/  file10.txt
+
+arjun@sai MINGW64 ~/.ssh/file11 (master)
+$ git branch -M main
+
+arjun@sai MINGW64 ~/.ssh/file11 (main)
+$ git commit -m "first commit"
+[main (root-commit) aa95779] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file10.txt
+
+arjun@sai MINGW64 ~/.ssh/file11 (main)
+$ git remote add origin git@github.com:niroshabandla/cs.git
+
+arjun@sai MINGW64 ~/.ssh/file11 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:niroshabandla/cs.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+arjun@sai MINGW64 ~/.ssh/file11 (main)
+$ ls
